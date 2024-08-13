@@ -1,16 +1,16 @@
-name: CD For SiYuan
+name: CD For SiYuan-unlock
 
 on:
   push:
     tags:
-      - '*-dev*'
+      - 'v*'
   workflow_dispatch:
 
 # ref https://docs.github.com/zh/actions/learn-github-actions/variables
 env:
   repo_name_android: "siyuan-android"
-  repo_name: "siyuan"
-  repo_owner: "siyuan-note"
+  repo_name: "siyuan-unlock"
+  repo_owner: "maysoft"
   package_json: "app/package.json"
 
 jobs:
